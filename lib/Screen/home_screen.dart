@@ -1,24 +1,32 @@
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  final a;
+  const HomeScreen({super.key,required this.a});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold();
+   @override
+  void initState() {
+  widget.a;
+    print('initState');
+    print('initState');
+    super.initState();
   }
-}
-
-class HomeScreen1 extends StatelessWidget {
-  const HomeScreen1({super.key});
+  @override
+  void dispose() {
+    print('dispose');
+    
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    print('build');
+
+    return const Scaffold();
   }
 }
