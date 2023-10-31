@@ -12,23 +12,27 @@ class _SafeareaScreenState extends State<SafeareaScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        // bottom: false,
-        // top: true,
-        // minimum: EdgeInsets.all(10),†
+      appBar: AppBar(
+        backgroundColor: Colors.red,
+        title: const Text('FontFamaly'),
+      ),
+      body: Center(
         child: Container(
-          height: double.infinity,
-          width: double.infinity,
-          // color: Colors.red,
-          child: TextButton(
-            onPressed: () {},
-            child: Text(
-              'data',
-              style: GoogleFonts.abel(
-                fontSize: 50,
-                color: Colors.red,
-              ),
+          height: 200,
+          width: 200,
+          decoration: const BoxDecoration(
+            color: Colors.red,
+            image: DecorationImage(
+              image: AssetImage('assets/images/61d183263a856e0004c6334a.png'),
+              // fit: BoxFit.contain,
+              // scale: 23,
             ),
+          ),
+          child: Image.asset(
+            'assets/images/61d183263a856e0004c6334a.png',
+            // fit: BoxFit.cover,
+            height: 10,
+            width: 10,
           ),
         ),
       ),
