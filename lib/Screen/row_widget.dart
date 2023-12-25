@@ -6,7 +6,6 @@ class RowWidget extends StatefulWidget {
   @override
   State<RowWidget> createState() => _RowWidgetState();
 }
-
 class _RowWidgetState extends State<RowWidget> {
   @override
   Widget build(BuildContext context) {
@@ -15,7 +14,7 @@ class _RowWidgetState extends State<RowWidget> {
         child: ListView(
           children: [
             DrawerHeader(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.blue,
               ),
               child: Column(
@@ -23,17 +22,17 @@ class _RowWidgetState extends State<RowWidget> {
                   Container(
                     height: 100,
                     width: 50,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                         color: Colors.brown, shape: BoxShape.circle),
                   ),
-                  Text('Drawer Header'),
+                  const Text('Drawer Header'),
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
-            Row(
+            const Row(
               children: [
                 Icon(Icons.abc),
                 SizedBox(
@@ -42,7 +41,7 @@ class _RowWidgetState extends State<RowWidget> {
                 Text('data'),
               ],
             ),
-            Row(
+            const Row(
               children: [
                 Icon(Icons.abc),
                 SizedBox(
@@ -51,7 +50,7 @@ class _RowWidgetState extends State<RowWidget> {
                 Text('data'),
               ],
             ),
-            Row(
+            const Row(
               children: [
                 Icon(Icons.abc),
                 SizedBox(
